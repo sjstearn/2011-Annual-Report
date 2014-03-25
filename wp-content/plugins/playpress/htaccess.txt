@@ -1,0 +1,4 @@
+# Put a copy of this file wherever you're storing your audio, and rename the copy to `.htaccess`. It affects all "children" of the directory you put it in.
+# This prevents problems that older versions of Firefox and Opera can have with Ogg Vorbis files.
+
+SetEnvIfNoCase Request_URI .(?:ogg|mp3)$ no-gzip dont-vary
